@@ -34,16 +34,17 @@ body{
 
 .brand{
     margin-top: 40px;
+    margin-left: 40px;
     display: flex;
     align-items:center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: row;
     width: 100%;
 }
 
 .container{
-    margin-top: 50px;
-    height: 100vh;
+    margin-top: 20vh;
+    height: 100%;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
@@ -51,8 +52,10 @@ body{
 
 .navbar{
     color: #fff;
-    text-align: left;
+    align-items: left;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -78,7 +81,7 @@ h3{
     height: 12px;
     background-color: #d1d1d1;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     opacity: 0.8;
     position: relative;
 }
