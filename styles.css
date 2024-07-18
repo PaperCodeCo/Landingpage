@@ -15,16 +15,33 @@ body{
     height: 100%;
 }
 
-.bg{
+
+/* .bg {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    z-index: -1000;
+    max-height: 100%;
+    z-index: -100;
     opacity: 0.2;
     background-size: cover;
-}
+} */
+
+.bg {
+    box-sizing: border-box;
+    display: block; 
+    width: 100vw;  
+    height: 100vh; 
+    padding: 0; 
+    margin: 0; 
+    background: url("assets/bg.png") no-repeat center center;  
+    background-size: cover; 
+    z-index: -100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
+  }
 
 .logo{
     width: 50px;
@@ -104,7 +121,7 @@ h3{
 
 .progress-bar span{
     display: block;
-    width: 80%;
+    width: 75%;
     height: 12px;
     background-color: #87b1de;
     animation: fill 1s ease-in 1;
@@ -116,7 +133,7 @@ h3{
     }
 
     to{
-        width:80%;
+        width:75%;
     }
 }
 
